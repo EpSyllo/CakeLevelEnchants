@@ -1,0 +1,9 @@
+name: CakeLevelEnchants
+version: '${version}'
+
+main: dev.cakestudio.cakelevelenchants.CakeLevelEnchants
+api-version: '1.21.4'
+load: POSTWORLD
+bootstrapper: dev.cakestudio.cakelevelenchants.bootstrap.Bootstrap
+
+authors: [CakeStudio]
