@@ -88,7 +88,6 @@ public class Bootstrap implements PluginBootstrap {
         m.registerEventHandler(RegistryEvents.ENCHANTMENT.entryAdd().newHandler(e -> {
             EnchantSetting s = map.get(e.key().key());
             if (s != null) {
-                c.getLogger().info("Применены настройки для {}: {}", e.key().key(), s);
                 if (s.maxLevel() > 0) {
                     e.builder().maxLevel(s.maxLevel());
                 }
